@@ -1,0 +1,201 @@
+@font-face{
+    src: url(fontes/Viafont.otf);
+    font-family: 'anagrama';
+}
+
+@font-face{
+    src: url(fontes/Wedges.ttf);
+    font-family: 'geral';
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #213435;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #213435;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-family: 'anagrama';
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.esp{
+    height: 40px;
+    width: 100%;
+}
+
+.typing-animation{
+    animation: typing 2s steps(40) 1s normal both;
+}
+
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 6.5em;
+    }
+}
+
+main{
+    background-color: #213435;
+    padding-top: 40px;
+}
+
+.container{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.palavra-embaralhada{
+    border-bottom: 2px solid white;
+    font-size: 60px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.nav{
+    background-color: #213435;
+    text-align: center;
+    font-family: 'geral';
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+button{
+    background-color: #213435;
+    border: none;
+}
+
+.formP{
+    display: flex;
+    align-items: center;
+}
+.formP input{
+    flex: 1;
+    margin-right: 10px;
+    height: 55px;
+    font-family: 'geral';
+}
+.formP #bt-enviar{
+    padding: 8px 16px;
+    background-color: rgb(194, 89, 106);
+    color: white;
+    font-family: 'geral';
+    border-radius: 7px;
+    height: 55px;
+}
+
+.keyboard {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-keyboard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.letra {
+    background-color: #95B0B2;
+    color: #213435;
+    border: none;
+    padding: 15px 20px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.letra:hover {
+    background-color: rgb(194, 89, 106);
+}
+
+.backspace, .enter {
+    padding: 15px 40px;
+}
+
+#proI{
+    color: white;
+    font-family: 'geral';
+    font-size: 30px;
+}
+
+#message {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+i{
+    color: rgb(194, 89, 106);
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.lampada {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.balao-texto {
+    display: none; 
+    position: absolute;
+    bottom: 35px; 
+    left: 0;
+    transform: translateX(-100%);
+    background-color: #95B0B2;
+    color: #213435;
+    padding: 10px;
+    border-radius: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'geral';
+    z-index: 10;
+}
+
+.esp-btns{
+    height: 100px;
+    width: 60%;
+}
+
+.input-f{
+    width: 40%;
+}
+
+

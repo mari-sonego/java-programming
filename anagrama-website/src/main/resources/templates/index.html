@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrama</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/imgs/fav-icon-anagrama.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7799490259.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <header class="container-fluid">
+
+        <div class="esp"></div>
+        <h1 class="typing-animation" id="titulo">Anagrama</h1>
+        
+    </header>
+
+    <nav id="nav">
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a id ='1' style="color: #95B0B2;" class="nav-link" aria-current="page" href="#">Fácil</a>
+              <!-- a que for ACTIVE vai ficar ROSA -->
+            </li>
+
+            <li class="nav-item">
+              <a id ='2' style="color: #95B0B2;" class="nav-link" href="#">Médio</a>
+            </li>
+
+            <li class="nav-item">
+              <a id ='3' style="color: #95B0B2;" class="nav-link" href="#">Difícil</a>
+            </li>
+
+          </ul>
+
+    </nav>
+
+    <main id="main">
+
+        <div class="container">
+
+            <p class="palavra-embaralhada"></p>
+            <p style="visibility: hidden;" id="lugar-id"></p>
+
+            <div>
+
+              <form>
+
+                <div class="formP">
+
+                  <div class="lampada" id="lampada">
+                    <button id="bt-dica"> <i class="fa-solid fa-lightbulb"></i> </button>
+                    <div class="balao-texto" id="balaoTexto"></div>
+                  </div>
+
+                  <input type="txt" class="form-control" id="palavraDigitada" placeholder="Digite a palavra desembaralhada ...">
+
+                  <button id="bt-enviar" type="button">Enviar</button>
+
+
+                </div>
+
+              </form>            
+
+          </div>
+
+          <div class="keyboard">
+
+            <div class="row-keyboard">
+                <button class="letra key">A</button>
+                <button class="letra key">B</button>
+                <button class="letra key">C</button>
+                <button class="letra key">D</button>
+                <button class="letra key">E</button>
+                <button class="letra key">F</button>
+                <button class="letra key">G</button>
+                <button class="letra key">H</button>
+                <button class="letra key">I</button>
+                <button class="letra key">J</button>
+                <button class="letra key">K</button>
+                <button class="letra key">L</button>
+                <button class="letra key">M</button>
+                <button class="letra key">N</button>
+                <button class="letra key">O</button>
+            </div>
+    
+            <div class="row-keyboard">
+                <button class="letra key">P</button>
+                <button class="letra key">Q</button>
+                <button class="letra key">R</button>
+                <button class="letra key">S</button>
+                <button class="letra key">T</button>
+                <button class="letra key">U</button>
+                <button class="letra key">V</button>
+                <button class="letra key">W</button>
+                <button class="letra key">X</button>
+                <button class="letra key">Y</button>
+                <button class="letra key">Z</button>
+                <button class="letra key backspace">&#x232B;</button>
+                <button id="tec-enviar" class="letra enter">ENTER</button>
+            </div>
+
+        </div>
+
+
+      </div>
+
+    </main>
+
+    <script src="/js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+
+</body>
+</html>

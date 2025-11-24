@@ -1,0 +1,18 @@
+2024-11-24 15:11:03.092574-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TEMA BINARY VARYING(255)": "X'aced00057372002b62722e696673702e6564752e647377332e616e616772616d612e6d6f64656c... (446)"; SQL statement:
+insert into palavras (palavra,pontuacao,tema,id) values (?,?,?,default) [22001-224]
+2024-11-24 15:12:44.511344-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TEMA BINARY VARYING(255)": "X'aced00057372002b62722e696673702e6564752e647377332e616e616772616d612e6d6f64656c... (446)"; SQL statement:
+insert into palavras (palavra,pontuacao,tema,id) values (?,?,?,default) [22001-224]
+2024-11-24 15:14:06.648424-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TEMA BINARY VARYING(255)": "X'aced00057372002b62722e696673702e6564752e647377332e616e616772616d612e6d6f64656c... (446)"; SQL statement:
+insert into palavras (palavra,pontuacao,tema,id) values (?,?,?,default) [22001-224]
+2024-11-24 15:16:46.792553-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER [*]COLUMN TEMA SET DATA TYPE BINARY VARYING(1024)"; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW, DOMAIN"; SQL statement:
+ALTER COLUMN TEMA SET DATA TYPE BINARY VARYING(1024) [42001-224]
+2024-11-24 15:17:27.257160-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TEMA BINARY VARYING(255)": "X'aced00057372002b62722e696673702e6564752e647377332e616e616772616d612e6d6f64656c... (446)"; SQL statement:
+insert into palavras (palavra,pontuacao,tema,id) values (?,?,?,default) [22001-224]
+2024-11-24 15:20:44.845905-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "TEMA BINARY VARYING(255)": "X'aced00057372002b62722e696673702e6564752e647377332e616e616772616d612e6d6f64656c... (446)"; SQL statement:
+insert into palavras (palavra,pontuacao,tema,id) values (?,?,?,default) [22001-224]
